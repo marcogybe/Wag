@@ -48,7 +48,7 @@ setName(user.name)
         times: [0, 0.2, 0.5, 0.8, 1],
       }} 
      
-         src="/Gift4u.png" alt="logo" />
+         src="/logo-gift.png" alt="logo" />
       </div>
       <h2>Register</h2>
       <form className="register-form" onSubmit={handleSubmit}>

@@ -19,9 +19,9 @@ const NavBar = () => {
                <h2>Welcome {name}</h2>
             </div>}
             <NavLink to='/' className='navbar-logo' onClick={closeMobileMenu}>
-          GIFT4U
+          <img src="/logo-gift.png" alt="" />
           
-          <i class="fas fa-gift"></i>
+         
         </NavLink>
         <div className='menu-icon' onClick={handleClick}>
           <i className={click ? 'fas fa-times' : 'fas fa-bars'} />

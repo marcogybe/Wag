@@ -1,5 +1,7 @@
 import React, { useState, useEffect } from "react";
 import axios from "axios";
+import Carousel from "./Carousel";
+
 
 const Home = () => {
    const [usersNum, setUsersNum] = useState(null);
@@ -17,7 +19,7 @@ const Home = () => {
 
    return (
 
-      <div className="landing">
+      <div className="home">
          <div className="container">
             <div className="text">
                <h1>Welcome, to our Gift4U Shop </h1>
@@ -27,6 +29,7 @@ const Home = () => {
                <h2>We have right now {usersNum} Customers.</h2>
             </div>
          </div>
+         
       
       </div>
    );

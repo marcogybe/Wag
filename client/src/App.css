@@ -1,11 +1,17 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 .App {
    text-align: center;
    display: flex;
-   min-height: 100vh;
    align-items: center;
    justify-content: center;
-   background: #faecec5a;
-   width: 100%;
+   background: #ffffff5a;
+   height: auto;
+   flex-direction: column;
 
    
    
@@ -112,7 +118,7 @@
  }
  
  .redirect {
-  background: linear-gradient(75deg,#8cc0de 68%,  #fedea8 75%, #ff9b9bbe 85%);
+  background: #8cc0de ;
    color: white;
    font-size: 2px;
   border-radius: 15px;
@@ -198,7 +204,7 @@
   justify-content: center;
   align-items: center;
   padding-top: 30px;
-  background: linear-gradient(78deg,#8cc0de 68%,  #fedea8 80%, #ff9b9bbe 86%);
+  background: #8cc0de ;
   color: white;
   width: 95%;
 
@@ -227,7 +233,7 @@
   justify-content: center;
   align-items: center;
   padding-top: 10px;
-  background: linear-gradient(78deg,#8cc0de 68%,  #fedea8 80%, #ff9b9bbe 86%);
+  background: #8cc0de ;
   color: white;
   width: 95%;
   border-radius: 15px;
@@ -241,4 +247,14 @@
  
   width: 200px;
   border-radius: 500px;
+}
+
+.landing {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  padding: 10px;
+  width: 100%;
+ 
 }
