@@ -70,16 +70,23 @@ const Profile = () => {
       <div className="profile-container">
         <div className="form-wrapper">
           <h1>Edit Profile</h1>
-          <hr /> 
-           <img className="avatar-img" src="https://cdn.pixabay.com/photo/2016/08/08/09/17/avatar-1577909_1280.png" alt="" />
-            <input className="avatar-input"
-    
-              type="file"
-              name="avatar"
-              accept="image/png, image/jpg, image/jpeg, image/gif"
-            />
-            <hr />
+          <hr />
           <form onSubmit={handleSubmit}>
+            <div>
+            <img
+            className="avatar-img"
+            src= {profile.avatar}
+            alt=""
+          />
+           <input
+            className="avatar-input"
+            type="file"
+            name="avatar"
+            accept="image/png, image/jpg, image/jpeg, image/gif"
+          />
+            </div>
+        
+          <hr />
             <label htmlFor="name"> Name</label>
             <input
               type="text"
@@ -107,18 +114,17 @@ const Profile = () => {
               defaultValue={profile.interests}
             />
             <hr />
-          
             {
               <button type="submit" className="profile-btn">
                 Save Changes
               </button>
             }
           </form>
-          {JSON.parse(localStorage.getItem("my-app-token")) && (
+          {JSON.parse(localStorage.getItem("my-app-token")) && 
             <div style={{ marginTop: "20px" }}>
               <NavLink to="/change-password">Change Password {"->"}</NavLink>
             </div>
-          )}
+          }
           <div>
             <br />
             {errorMessage && <p style={{ color: "darkred" }}>{errorMessage}</p>}

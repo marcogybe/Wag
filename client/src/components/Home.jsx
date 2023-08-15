@@ -1,6 +1,14 @@
 import React, { useState, useEffect } from "react";
 import axios from "axios";
 import Carousel from "./Carousel";
+import "./home.css"
+import {gift} from "./data"
+import videoGif from "../Cream White Floral Vintage Inspirational Quote Card Landscape (2).mp4";
+import videoGif2 from "../bike.mp4";
+import videoGif3 from "../music.mp4";
+import videoGif4 from "../flower.mp4";
+import {Card} from "./Card"
+import { NavLink } from "react-router-dom";
 
 
 const Home = () => {
@@ -20,18 +28,88 @@ const Home = () => {
    return (
 
       <div className="home">
-         <div className="container">
-            <div className="text">
-               <h1>Welcome, to our Gift4U Shop </h1>
-               <p>
-               Join our Gift4U Shop.
-               </p>
-               <h2>We have right now {usersNum} Customers.</h2>
-            </div>
+
+<div className="division"></div>
+         <div>
+             
+            <NavLink to="/search"><div className="search-bar">  <i class="fa-solid fa-magnifying-glass"> Search your next Gift!  </i></div></NavLink>
+          </div>
+
+         
+         
+         <div className="open-video">
+        
+</div>    
+
+<div className="birth-gift"> 
+<div>  Our best Birthday cards </div>
+</div>
+ <div><video className="birth-video" src={videoGif} autoPlay loop muted>
+          {" "}
+        </video></div>
+<div  className="list-container" >
+
+<div className="birth-list"> 
+<div><Card img= "./images/birth.png" /></div> 
+<div><Card img= "./images/birth1.png" /></div>
+<div><Card img= "./images/birth2.png"/></div>
+<div><Card img= "./images/birth3.png" /></div>
+<p className="more-button"><i class="fa-solid fa-gifts"></i> See more...</p>
+
+</div>
+
+</div>
+<br /> 
+
+
+
+<div>
+
+<div className="gift-bar">  <i class="fa-solid fa-crown">  HOT Gifts!  </i></div>
+
+   <div className="video-container">
+   <div><video className="birth-video2" src={videoGif2} autoPlay loop muted>
+          {" "}
+        </video></div>
+        <div><video className="birth-video3" src={videoGif3} autoPlay loop muted>
+          {" "}
+        </video><video className="birth-video4" src={videoGif4} autoPlay loop muted>
+          {" "}
+        </video></div>
+        
+      
+   </div>
+             
+            
+           </div>
+
+<div className="open-carousel"><h2 > Categories</h2>
+         <div className="home-carousel"> 
+         
+         <img className="gift-logo" src="./images/food.png" alt="" />
+         <img className="gift-logo" src="./images/beauty.png" alt="" />
+         <img className="gift-logo" src="./images/sport.png" alt="" />
+         <img className="gift-logo" src="./images/games.png" alt="" />
+         <img className="gift-logo" src="./images/style.png" alt="" />
+         <img className="gift-logo" src="./images/hobby.png" alt="" />
+         <img className="gift-logo" src="./images/garden.png" alt="" />
+         <img className="gift-logo" src="./images/cinemas.png" alt="" />
+          <p className="more-button"><i class="fa-solid fa-gifts"></i>  See more... </p>
          </div>
+        
+       </div>
+         
+
+         
+
+
+         </div>
+
+         
+
          
       
-      </div>
+      
    );
 };
 

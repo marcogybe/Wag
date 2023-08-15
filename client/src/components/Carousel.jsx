@@ -35,8 +35,7 @@ function Carousel ({images}) {
                 
         )
         }) }
-        <div className="carousel-arr-l" onClick={slideLeft}>&lsaquo;</div>
-        <div className="carousel-arr-r" onClick={slideRight}>&rsaquo;</div>
+       
         </div>
       
            

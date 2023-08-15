@@ -15,7 +15,7 @@ try{
         to: email,
         from:{
             name: 'Gift4U Shop',
-            email: 'wmossleh@uos.de'
+            email: 'macocala1309@gmail.com'
         },
         subject: subject,
         text: plainText,
