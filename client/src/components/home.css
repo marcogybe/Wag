@@ -95,7 +95,8 @@
     background-color: #ff8282;
     height: 60px;
     font-size: 20px;
-    justify-content: start;
+   
+    align-items: center;
     padding: 5px;
     align-items: center;
     flex-direction: column;
@@ -110,12 +111,13 @@
 
 
 .list-container {
-    width: auto;
+    width: 100%;
     height: fit-content;
     background-color: #8cc0de38;
     display: flex;
     justify-content: center;
     margin-top: 0%;
+    justify-content: center;
 
   
     
@@ -129,9 +131,9 @@
     flex-direction: row;
     flex-wrap: wrap;
     margin-top: 10px;
-   width: 95%;
+   width: 90%;
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-around;
     
    
    
@@ -145,11 +147,12 @@
     font-family:  'Lucida Sans Regular', ;
     margin-top: 15px;
     font-style: italic;
-    border-radius:255px 15px     ;
-    border: 4px #fedea8 solid;
-    background:  linear-gradient(0deg, #8cc0de50 22%,#fedea8c0 22%, #ff9b9b8a  78%,#8cc0de70   69%);
-    
-
+    border-radius: 55px 15px     ;
+    border: 2px rgba(0, 0, 0, 0.564) solid;
+    background:  linear-gradient(75deg,#fedea8c0 22%, #ff9b9b 80%,#fedea8cd   88%);
+    width: fit-content;
+text-align: center;
+justify-content: center;
 }
 
 
@@ -193,7 +196,7 @@ border: #fedea8 2px solid;
 }
 
 .gift-logo {
-    width: 50%;
+    width: 150px;
     height: fit-content;
    object-fit: cover;
    justify-content: ;
