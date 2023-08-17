@@ -11,14 +11,11 @@ const Login1 = () => {
   const styleGoogleBtn = {
     background: "white",
     border: "2px solid tomato",
-    borderRadius: "15px",
+    borderRadius: "20px",
     color: "#3a4c5a",
     padding: "3px 7px 0",
     display: "flex",
     alignItems: "center",
-    margin: "20px",
-   
-
   };
 
   const [
@@ -98,7 +95,7 @@ const Login1 = () => {
     whileHover={{ scale: 1.2 }}
           onClick={renderProps.onClick} style={styleGoogleBtn}>
             <i className="fab fa-google"></i> 
-            <strong style={{margin:"2px 5px"}}>Login with Google</strong> 
+            <strong style={{margin:"0 5px"}}>Login with Google</strong> 
           </motion.button>
         )}
       />

@@ -5,10 +5,11 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
     width: 95%;
     height: fit-content;
     padding: 50px;
-    background:  linear-gradient(130deg, #8cc0dee3 35%,#fedea8a3 35%, #ff9b9b92  55%,#8cc0deee   45%);
+    background:  linear-gradient(112deg, #8cc0dee3 35%,#fedea8a3 35%, #ff9b9b92  55%,#8cc0deee   45%);
     border-radius: 25px;
     margin-top: 5px;
     
@@ -67,7 +68,48 @@
     font-style: italic;
     border-radius: 250px 50px;
     
-    
-    
-    
+   
   }
+
+  .open-categ {
+
+   width: 100%;
+   height: fit-content;
+   
+   display: flex;
+   flex-direction: row;
+   justify-content: center;
+   align-items: center;
+   flex-wrap: wrap;
+  
+}
+
+.home-categ {
+   display: flex;
+   flex-direction: row;
+   overflow: hidden;
+   width: 100%;
+   height: fit-content;
+   background:  linear-gradient(150deg,#fedea8ce 8%, #ff9b9bb9  93%);
+   padding: 10px;
+   border-radius: 25px;
+   border: #fedea8 2px solid;
+   flex-wrap: wrap;
+   justify-content: center
+  
+   
+   
+ 
+}
+
+.gift-logo2 {
+   width: 100px;
+   height: fit-content;
+  object-fit: cover;
+  border-radius: 500%;
+   border: #fedea8 2px solid;
+   padding: 5px;
+background-color: #8cc0def6;
+   
+   
+}

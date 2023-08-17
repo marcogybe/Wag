@@ -21,6 +21,9 @@ const NavBar = () => {
     <>
       <header className="navbar">
         <div className="container">
+        <NavLink to="/home" className="navbar-logo" onClick={closeMobileMenu}>
+            <img src="/logo-gift.png" alt="" />
+          </NavLink>
           {authenticated && (
             <div
               style={{
@@ -41,13 +44,10 @@ const NavBar = () => {
                   }}
                 />
               )}
-              <h3>Welcome {name.split(" ")[0]}</h3>
+              <h3 className="welcome">Welcome {name.split(" ")[0]}</h3>
             </div>
           )}
-          <NavLink to="/home" className="navbar-logo" onClick={closeMobileMenu}>
-            <img src="/logo-gift.png" alt="" />
-          </NavLink>
-          
+        
           <div className="menu-icon" onClick={handleClick}>
             <i className={click ? "fas fa-times" : "fas fa-bars"} />
           </div>
@@ -92,7 +92,7 @@ const NavBar = () => {
                 className="nav-links"
                 onClick={closeMobileMenu}
               >
-                Contact
+                Contact Us
               </NavLink>
             </li>
             {authenticated ? (

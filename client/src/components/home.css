@@ -83,7 +83,7 @@
 .birth-video {
     width: 100%;
     border-bottom: #fedea8 2px solid;
-  
+  height:fit-content;
     
 }
 
@@ -95,7 +95,7 @@
     background-color: #ff8282;
     height: 60px;
     font-size: 20px;
-   
+   color: #4b4a4a;
     align-items: center;
     padding: 5px;
     align-items: center;
@@ -145,11 +145,12 @@
 .more-button {
     padding: 10px;
     font-family:  'Lucida Sans Regular', ;
+    font-weight: bold;
     margin-top: 15px;
     font-style: italic;
-    border-radius: 55px 15px     ;
-    border: 2px rgba(0, 0, 0, 0.564) solid;
-    background:  linear-gradient(75deg,#fedea8c0 22%, #ff9b9b 80%,#fedea8cd   88%);
+    border-radius: 5px 25px     ;
+    border: #fedea8 2px solid;
+    background:  linear-gradient(45deg,#fedea8c0 22%, #ff9b9b 70%,#fedea8cd   88%);
     width: fit-content;
 text-align: center;
 justify-content: center;
@@ -160,35 +161,25 @@ justify-content: center;
 .open-carousel {
 
     width: 100%;
+    
     height: fit-content;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
+    justify-content: center;
     align-items: center;
-    
-   
-    
-    
-    
-    
-   
-    
    
 }
 
 .home-carousel {
     display: flex;
     flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
-    
-    justify-content: center;
-    width: 90%;
-    height: 300px;
-    background:  linear-gradient(50deg, #8cc0de4f 2%,#fedea845 8%, #ff9b9b96  93%,#8cc0de7b   97%);
+    overflow: scroll;
+    width: 100%;
+    height: 110px;
+    background:  linear-gradient(150deg, #8cc0de4f 2%,#fedea845 8%, #ff9b9b96  93%,#8cc0de7b   97%);
     padding: 10px;
     border-radius: 25px;
-    overflow: scroll;
-border: #fedea8 2px solid;
+    border: #fedea8 2px solid;
    
     
     
@@ -196,10 +187,11 @@ border: #fedea8 2px solid;
 }
 
 .gift-logo {
-    width: 150px;
+    width: 115px;
     height: fit-content;
    object-fit: cover;
-   justify-content: ;
+   border-radius: 500%;
+   
     
     border: #fedea8 2px solid;
     padding: 5px;
@@ -272,3 +264,6 @@ border-radius: 50px;
     font-weight: bold;
     box-shadow: 2px 4px 2px #fedea8aa;
 }
+
+
+

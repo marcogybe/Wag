@@ -31,6 +31,15 @@
   
 }
 
+.welcome {
+ width: 15px;
+  font-family: 'Lucida Sans' ;
+  font-style: italic;
+  font-weight: bold;
+  
+
+}
+
 .fa-firstdraft {
   margin-left: 0.5rem;
   font-size: 1.6rem;

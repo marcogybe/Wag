@@ -101,12 +101,12 @@ const Login = () => {
           Don't have an account? Register {" "}
           <NavLink to="/register" className="linkin"> Here!{" "}</NavLink>
         </motion.p>
-      <div>
-        <Login1 className="g-login"/>
-      </div>
-      </div>
-        
       
+      </div>
+        <hr/>
+      <div>
+        <Login1 />
+      </div>
     </div>
   );
 };

@@ -16,7 +16,8 @@ import UserContext from "./components/UserContext";
 import { useLocation } from 'react-router-dom'
 import Landing from "./components/Landing";
 import axios from "axios";
-import Search from "./components/Search";
+import Footer from "./components/Footer";
+import VoucherSearch from "./components/VouchersSearch";
 
 function App() {
 const location = useLocation()
@@ -50,7 +51,7 @@ const location = useLocation()
           setName(res.data.name);
           setAuthenticated(true);
           setUserId(res.data.userId);
-          res.data.avatar? setAvatar(res.data.avatar) : setAvatar("https://cdn-icons-png.flaticon.com/512/6388/6388000.png") 
+          res.data.avatar? setAvatar(res.data.avatar) : setAvatar("https://cdn.pixabay.com/photo/2016/08/08/09/17/avatar-1577909_1280.png") 
         })
         .catch((err) => {
           if(err.response.status === 401)
@@ -84,6 +85,7 @@ const logoutHandler = () => {
       ]}
     >
       {location.pathname !== "/" && <  NavBar />}
+      
       <div className="App">
         <Routes>
           <Route path="/" element={<Landing/>}/>
@@ -96,13 +98,14 @@ const logoutHandler = () => {
           <Route path="/contact" element={<Contact />} />
           <Route path="/reset-password" element={<ResetPassword />} />
           <Route path="/change-password" element={<ChangePassword />} />
-          <Route path="/search" element={<Search />} />
           <Route
             path="/reset-password/:email/:token"
             element={<PasswordRecovery />}
           />
+          <Route path="/voucher/search" element={<VoucherSearch/>} />
         </Routes>
       </div>
+      {location.pathname !== "/" && <Footer />}
     </UserContext.Provider>
   );
 }
